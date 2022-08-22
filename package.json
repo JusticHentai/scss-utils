@@ -1,12 +1,24 @@
 {
-  "name": "@bilibili-activity/douza-scss",
-  "version": "1.0.3",
-  "description": "douza的scss包",
+  "name": "@justichentai/scss-utils",
+  "version": "1.0.0",
+  "description": "scss样式工具库; scss style utils",
+  "keywords": [
+    "justichentai",
+    "scss",
+    "utils",
+    "scss-utils"
+  ],
+  "homepage": "https://github.com/JusticHentai/scss-utils",
   "repository": {
     "type": "git",
-    "url": "https://git.bilibili.co/douza/douza-scss.git"
+    "url": "https://github.com/JusticHentai/scss-utils"
   },
   "license": "ISC",
-  "author": "douza",
-  "scripts": {}
+  "author": "justichentai",
+  "type": "module",
+  "main": "index.scss",
+  "dependencies": {
+    "postcss": "^8.4.16",
+    "sass": "^1.54.4"
+  }
 }

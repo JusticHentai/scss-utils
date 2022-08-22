@@ -1,29 +1,35 @@
 // flex
+
 @mixin flex-all {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @mixin flex-align {
   display: flex;
   align-items: center;
 }
+
 @mixin flex-justify {
   display: flex;
   justify-content: center;
 }
+
 @mixin flex-y {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: start;
 }
+
 @mixin flex-y-center {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
 @mixin flex-warp {
   display: flex;
   flex-wrap: wrap;
@@ -31,59 +37,71 @@
   align-items: center;
   justify-content: start;
 }
+
 @mixin flex-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 @mixin flex-around {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-// block init
+// block
+
 @mixin block-r {
   position: relative;
   width: 100%;
   height: 100%;
 }
+
 @mixin block-a {
   position: absolute;
   width: 100%;
   height: 100%;
 }
+
 @mixin block-f {
   position: fixed;
   width: 100%;
   height: 100%;
 }
+
 @mixin block-rw {
   position: relative;
   width: 100%;
 }
+
 @mixin block-aw {
   position: absolute;
   width: 100%;
 }
+
 @mixin block-fw {
   position: fixed;
   width: 100%;
 }
+
 @mixin block-rh {
   position: relative;
   height: 100%;
 }
+
 @mixin block-ah {
   position: absolute;
   height: 100%;
 }
+
 @mixin block-fh {
   position: fixed;
   height: 100%;
 }
 
 // image
+
 @mixin image-cover {
   @include flex-all;
 
@@ -95,6 +113,7 @@
     user-select: none;
   }
 }
+
 @mixin image-contain {
   @include flex-all;
 
@@ -106,6 +125,7 @@
     user-select: none;
   }
 }
+
 @mixin image-wt {
   @include flex-all;
 
@@ -118,6 +138,7 @@
     user-select: none;
   }
 }
+
 @mixin image-wb {
   @include flex-all;
 
@@ -132,6 +153,7 @@
 }
 
 // 切换状态
+
 @mixin hide-show {
   transition: 0.3s opacity ease-in-out;
 
@@ -146,29 +168,29 @@
 
 // 通用背景配置
 @mixin bg($url) {
-  background: $url no-repeat center/cover;
+  background: url('#{$url}') no-repeat center/cover;
 }
 
 // 背景contain
 @mixin bg-contain($url) {
-  background: $url no-repeat center/contain;
+  background: url('#{$url}') no-repeat center/contain;
 }
 
 @mixin bg-x($url) {
-  background: $url no-repeat center/cover;
+  background: url('#{$url}') no-repeat center/cover;
 }
 
 // 竖向背景配置
 @mixin bg-y($url) {
-  background: $url center/contain;
+  background: url('#{$url}') center/contain;
 }
 
 // y轴到顶 开始变形
 @mixin bg-y-top($url) {
-  background: $url center top / cover;
+  background: url('#{$url}') center top / cover;
 }
 
 // y轴到底 开始变形
 @mixin bg-y-bottom($url) {
-  background: $url center bottom / cover;
+  background: url('#{$url}') center bottom / cover;
 }
