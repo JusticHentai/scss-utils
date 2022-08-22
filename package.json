@@ -1,0 +1,12 @@
+{
+  "name": "@bilibili-activity/douza-scss",
+  "version": "1.0.3",
+  "description": "douza的scss包",
+  "repository": {
+    "type": "git",
+    "url": "https://git.bilibili.co/douza/douza-scss.git"
+  },
+  "license": "ISC",
+  "author": "douza",
+  "scripts": {}
+}
